@@ -141,6 +141,32 @@
       "metadata": {
         "dependencies": []
       }
+    },
+    {
+      "name": "Dsrh",
+      "type": "structure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dsrh"
+    },
+    {
+      "name": "EdsguyfItIsStruckByLightning",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "edsguyf_it_is_struck_by_lightning",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],

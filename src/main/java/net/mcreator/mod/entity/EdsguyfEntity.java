@@ -11,6 +11,7 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.common.MinecraftForge;
 
+import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.gen.Heightmap;
 import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.World;
@@ -24,6 +25,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.monster.MonsterEntity;
+import net.minecraft.entity.effect.LightningBoltEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
@@ -35,11 +37,16 @@ import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.Blocks;
 
+import net.mcreator.mod.procedures.EdsguyfItIsStruckByLightningProcedure;
 import net.mcreator.mod.entity.renderer.EdsguyfRenderer;
 import net.mcreator.mod.ModModElements;
+
+import java.util.Map;
+import java.util.HashMap;
 
 @ModModElements.ModElement.Tag
 public class EdsguyfEntity extends ModModElements.ModElement {
@@ -127,6 +134,20 @@ public class EdsguyfEntity extends ModModElements.ModElement {
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+		}
+
+		@Override
+		public void func_241841_a(ServerWorld serverWorld, LightningBoltEntity entityLightningBolt) {
+			super.func_241841_a(serverWorld, entityLightningBolt);
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				EdsguyfItIsStruckByLightningProcedure.executeProcedure($_dependencies);
+			}
 		}
 	}
 }
