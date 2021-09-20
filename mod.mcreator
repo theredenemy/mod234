@@ -1,0 +1,196 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "Boo",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "boo"
+    },
+    {
+      "name": "See",
+      "type": "biome",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "see"
+    },
+    {
+      "name": "Dfs",
+      "type": "potion",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dfs"
+    },
+    {
+      "name": "BooOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "boo_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NjRightClickedInAir",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nj_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Nj",
+      "type": "musicdisc",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nj"
+    },
+    {
+      "name": "Edsguyf",
+      "type": "livingentity",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "edsguyf"
+    },
+    {
+      "name": "What",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "what"
+    },
+    {
+      "name": "Hd",
+      "type": "dimension",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hd",
+      "metadata": {
+        "ep": true
+      }
+    },
+    {
+      "name": "HKeyOnKeyPressed",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "h_key_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HKeyOnKeyReleased",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "h_key_on_key_released",
+      "metadata": {
+        "dependencies": []
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "fll",
+      "files": [
+        "fll"
+      ],
+      "category": "neutral",
+      "subtitle": "thdf"
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "item.mod.edsguyf_spawn_egg": "Edsguyf Spawn Egg",
+      "item.minecraft.lingering_potion.effect.dfs": "Lingering Potion of Dfs",
+      "item.minecraft.potion.effect.dfs": "Potion of Dfs",
+      "biome.mod.see": "See",
+      "item.minecraft.splash_potion.effect.dfs": "Splash Potion of Dfs",
+      "subtitles.fll": "thdf",
+      "block.mod.what": "What",
+      "block.mod.boo": "Boo",
+      "item.mod.nj.desc": "...",
+      "entity.mod.edsguyf": "Edsguyf",
+      "item.minecraft.tipped_arrow.effect.dfs": "Arrow of Dfs",
+      "item.mod.nj": "Nj",
+      "item.mod.hd": "Hd Portal Igniter"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "mod",
+    "modName": "mod234",
+    "version": "1.0.0",
+    "author": "tdm20, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "modElementsPackage": "net.mcreator.mod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100236710
+}

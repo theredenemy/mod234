@@ -1,0 +1,14 @@
+{
+  "parent": "forge:item/default",
+  "loader": "forge:composite",
+  "parts": {
+    "part1": {
+      "loader": "forge:obj",
+      "model": "mod:models/item/what.obj",
+      "ambientToFullbright": true
+    }
+  },
+  "textures": {
+    "particle": "mod:blocks/what"
+  }
+}

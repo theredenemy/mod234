@@ -1,0 +1,30 @@
+{
+  "_fv": 24,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion of Dfs",
+    "splashName": "Splash Potion of Dfs",
+    "lingeringName": "Lingering Potion of Dfs",
+    "arrowName": "Arrow of Dfs",
+    "effects": [
+      {
+        "effect": {
+          "value": "INSTANT_DAMAGE"
+        },
+        "duration": 3600,
+        "amplifier": 255,
+        "ambient": false,
+        "showParticles": true
+      },
+      {
+        "effect": {
+          "value": "WITHER"
+        },
+        "duration": 3600,
+        "amplifier": 171,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

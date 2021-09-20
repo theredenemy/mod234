@@ -1,0 +1,12 @@
+{
+  "fll": {
+    "category": "neutral",
+    "subtitle": "subtitles.fll",
+    "sounds": [
+      {
+        "name": "mod:fll",
+        "stream": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mod:blocks/boo",
+    "up": "mod:blocks/boo",
+    "north": "mod:blocks/boo",
+    "east": "mod:blocks/boo",
+    "south": "mod:blocks/boo",
+    "west": "mod:blocks/boo",
+    "particle": "mod:blocks/boo"
+  }
+}
